@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>선택 반응 설문</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="card survey-card" id="surveyCard">
+      <div class="top-label">선택 반응 설문</div>
+      <h1>버튼 선택 설문</h1>
+      <p class="description">
+        총 10개의 문항에서 화면에 보이는 두 버튼 중 하나를 선택해 주세요.
+        각 문항은 버튼을 누르면 자동으로 다음으로 넘어갑니다.
+      </p>
+      <p class="privacy-note">
+        이름, 전화번호, 주소, 학번 등 개인정보는 입력받지 않습니다.
+        편하게 설문해주세요.
+      </p>
+
+      <div class="progress-wrap" aria-label="설문 진행률">
+        <div class="progress-text">
+          <span id="progressText">1 / 10</span>
+          <span id="progressPercent">10%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
+      <div class="question-box">
+        <p class="question-title" id="questionTitle">더 끌리는 버튼을 선택해 주세요.</p>
+        <div class="button-row" id="buttonRow"></div>
+      </div>
+
+      <div class="status-message" id="statusMessage" role="status"></div>
+    </section>
+
+    <section class="card done-card hidden" id="doneCard">
+      <div class="done-icon">✓</div>
+      <h1>설문이 완료되었습니다</h1>
+      <p class="description">
+        응답이 저장되었습니다. 감사합니다!.
+      </p>
+      <button class="primary-action" id="restartButton">다시 설문하기</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
