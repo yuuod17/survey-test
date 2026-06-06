@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>관리자 CSV 다운로드</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell admin-shell">
+    <section class="card admin-card">
+      <div class="top-label">관리자 페이지</div>
+      <h1>CSV 다운로드</h1>
+      <p class="description">
+        설문 응답 데이터는 CSV 파일로만 내려받습니다.
+      </p>
+
+      <div class="admin-form">
+        <label for="adminPassword">관리자 비밀번호</label>
+        <input id="adminPassword" type="password" placeholder="Cloudflare Worker에 설정한 비밀번호" autocomplete="current-password" />
+        <button class="primary-action" id="downloadCsvButton">CSV 다운로드</button>
+      </div>
+
+      <div class="status-message" id="adminStatus" role="status"></div>
+
+      <div class="admin-help">
+        <h2><p style="color: red;">! 경고, 이 사이트는 csv 다운로드 사이트 입니다 !</p></h2>
+        <p>
+          <p style="color: red;">! 설문용 사이트가 아닌 관리자용 사이트입니다. !<br>! 다시 돌아가 설문조사 사이트에 들어가주세요 !</p>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
