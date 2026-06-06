@@ -1,6 +1,6 @@
 // 1) Cloudflare Worker를 배포한 뒤, 아래 주소를 본인 Worker 주소로 바꾸세요.
 // 예: const API_BASE_URL = "https://button-survey-api.yourname.workers.dev";
-const API_BASE_URL = "https://button-survey-api.oht081027.workers.dev/";
+const API_BASE_URL = "https://button-survey-api.oht081027.workers.dev";
 
 const TOTAL_QUESTIONS = 10;
 const BUTTON_TEXT = "선택하기";
